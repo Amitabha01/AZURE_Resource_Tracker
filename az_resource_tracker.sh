@@ -19,6 +19,8 @@ set -o pipefail   # If any pipeline fail
 # AZURE Functions
 # AZURE Users
 
+mkdir -p ./outputs     # Creates output directory/folder if does't exist
+
 OUTPUT_FILE="./outputs/outputof_resourcetracker"
 
 echo "Azure Resource Report - $(date)" > $OUTPUT_FILE

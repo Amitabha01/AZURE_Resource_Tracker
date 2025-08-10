@@ -10,6 +10,7 @@ The Azure Resource Tracker is a comprehensive monitoring tool that generates det
 
 - **Multi-Resource Monitoring**: Tracks VMs, Storage Accounts, Functions, and Users
 - **Automated Reporting**: Generates timestamped reports in the `outputs/` directory  
+- **Auto-Directory Creation**: Automatically creates output directory if it doesn't exist
 - **JSON Formatted Output**: Clean, parseable user data using `jq`
 - **Error Handling**: Built-in error detection and pipeline failure protection
 - **Debug Mode**: Comprehensive logging for troubleshooting
@@ -133,11 +134,6 @@ The script includes several configurable options:
 3. **jq Command Not Found**
    ```bash
    sudo apt-get update && sudo apt-get install jq
-   ```
-
-4. **Output Directory Issues**
-   ```bash
-   mkdir -p outputs
    ```
 
 ### Debug Mode
